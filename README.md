@@ -5,7 +5,8 @@
 
 ## Overview
 
-This repository accompanies our [EMNLP2025 Findings paper](https://arxiv.org/pdf/2502.08638), providing the datasets and starter evaluation code the cross lingual examination of Multilingual Embedding models through LLM-Generated Adversarial Examples.
+This repository accompanies our [EMNLP2025 Findings paper](https://arxiv.org/pdf/2502.08638) and provides the datasets and starter code for evaluating multilingual embedding models under cross-lingual adversarial conditions.
+The adversarial examples are generated via Large Language Models (LLMs) to systematically probe embedding robustness across languages.
 
 ---
 
@@ -25,14 +26,30 @@ This repository accompanies our [EMNLP2025 Findings paper](https://arxiv.org/pdf
 The repository is organized as follows:
 
 ```
-├── TO UPDATE
-│   └── The noised evaluation datasets (CLSD - WMT19/21) produced.
-├── TO UPDATE
-│   └── The 10K (per language) noised training samples (TED - X-News) used for fine-tuning the models. Includes both random and realistic OCR Noise variants.
+├── evaluation_sets
+│   └── The evaluation datasets (CLSD - WMT19/21) introduced
+├── experimentation_notebooks
+│   └── The notebook used to compute all the experiments and analysis from the paper
+├── single_token_swaps_annotations
+│   └── The annotations created for performing the fine-grained similarity analysis (Section 3.3)
 ```
 
 ## Datasets
 
+This repository introduces the **CLSD–WMT19** and **CLSD–WMT21** adversarial datasets used for evaluation of precise x-lingual semantic search capabilities of models.
+All datasets are publicly available within this repository.
+
+Each dataset file contains the following columns:
+
+| Column | Description |
+|:--------|:-------------|
+| **French** | Original text in French |
+| **German** | Original text in German |
+| **de_adv1 – de_adv4** | Adversarial distractors in German (used for FR → DE evaluation) |
+| **fr_adv1 – fr_adv4** | Adversarial distractors in French (used for DE → FR evaluation) |
+
+Machine-translated versions to English are also provided.  
+These files are prefixed with `MT_M2M_` and follow the same structure.
 
 ## Citation
 
