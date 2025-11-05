@@ -56,14 +56,24 @@ These files are prefixed with `MT_M2M_` and follow the same structure.
 If you use these resources, please cite our paper:
 
 ```bibtex
-@misc{michail2025examiningmultilingualembeddingmodels,
-      title={Examining Multilingual Embedding Models Cross-Lingually Through LLM-Generated Adversarial Examples}, 
-      author={Andrianos Michail and Simon Clematide and Rico Sennrich},
-      year={2025},
-      eprint={2502.08638},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2502.08638}, 
+@inproceedings{michail-etal-2025-examining,
+    title = "Examining Multilingual Embedding Models Cross-Lingually Through {LLM}-Generated Adversarial Examples",
+    author = "Michail, Andrianos  and
+      Clematide, Simon  and
+      Sennrich, Rico",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-emnlp.115/",
+    pages = "2161--2170",
+    ISBN = "979-8-89176-335-7"
+    "
 }
 ```
 ## About Impresso
