@@ -73,7 +73,6 @@ If you use these resources, please cite our paper:
     url = "https://aclanthology.org/2025.findings-emnlp.115/",
     pages = "2161--2170",
     ISBN = "979-8-89176-335-7"
-    "
 }
 ```
 ## About Impresso
